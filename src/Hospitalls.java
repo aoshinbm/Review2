@@ -1,30 +1,23 @@
 class Hospitalls {
-	String hname;
-	String haddress;
-	String hcity; 
-	String hstate;
+	String name;
+	String address;
+	String city; 
+	String state;
 	int zip;
-	String hdepart;
-	String hpatient;
 
-Hospitalls(String hname, String haddress, String hcity, String hstate, int zip, String hdepart, String hpatient)
+Hospitalls(String name, String address, String city, String state, int zip)
 {
-	this.hname=hname;
-	this.haddress=haddress;
-	this.hcity=hcity;
-	this.hstate=hstate;
+	this.name=name;
+	this.address=address;
+	this.city=city;
+	this.state=state;
 	this.zip=zip;
-	this.hdepart=hdepart;
-	this.hpatient=hpatient;
-}
-		
+}		
 void hospitalDetails() {
-	System.out.println(hname);
-	System.out.println(haddress);
-	System.out.println(hcity);
-	System.out.println(hstate);
-	System.out.println(zip);
-	System.out.println(hdepart);
-	System.out.println(hpatient);
+	System.out.println(this.name);
+	System.out.println(this.address);
+	System.out.println(this.city);
+	System.out.println(this.state);
+	System.out.println(this.zip);
 	}
 }

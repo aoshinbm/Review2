@@ -1,27 +1,22 @@
 class Patient{
-	String pname;
+	String patient_name;
 	int age;
 	int phone;
-	String pcity;
-	String pstate;
-	String pdepartment;	
-
-Patient(String pname,int age,int phone,String pcity,String pstate,String pdepartment )
+	String city;
+	String department;	
+Patient(String patient_name,int age,int phone,String city,String department )
 {
-	this.pname=pname;
+	this.patient_name=patient_name;
 	this.age=age;
 	this.phone=phone;
-	this.pcity=pcity;
-	this.pstate=pstate;
-	this.pdepartment=pdepartment;
-}
-	
+	this.city=city;
+	this.department=department;
+}	
 void patientDetails() {
-	System.out.println(pname);
-	System.out.println(age);
-	System.out.println(phone);
-	System.out.println(pcity);
-	System.out.println(pstate);
-	System.out.println(pdepartment);
+	System.out.println(this.patient_name);
+	System.out.println(this.age);
+	System.out.println(this.phone);
+	System.out.println(this.city);
+	System.out.println(this.department);
 }
 }
